@@ -10,64 +10,69 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/style.css">
 
-    <script src="/js/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="/js/app.js" defer></script>
 </head>
 
-<body>
-    <div>
-        <div>
-            <img src="/img/odin-lined.png" alt="Logo of The Odin Project">
-            <h1>odin</h1>
+<body class="page">
+    <div class="hero page__hero">
+        <div class="hero__header">
+            <img src="/img/odin-lined.png" alt="Logo of The Odin Project" class="hero__logo">
+            <h1 class="hero__title">odin</h1>
         </div>
-        <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com">Unsplash</a></p>
+        <p class="hero__caption">Photo by <a href="https://unsplash.com/@haliewestphoto" class="link link_color_white">Halie West</a> on <a href="https://unsplash.com" class="link link_color_white">Unsplash</a></p>
     </div>
 
-    <div>
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-        <p>You know you want to.</p>
+    <div class="page__text">
+        <p class="text text_fs_lg">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="text text_fst_italic">now</span> to get started.</p>
+        <p class="text text_fs_lg">You <span class="text text_fst_italic">know</span> you want to.</p>
     </div>
 
-    <div>
-        <h2>Let's do this!</h2>
-        <form action="" id="form">
-            <div>
-                <div>
-                    <label for="first-name">first name</label>
-                    <input type="text" id="first-name" name="first-name">
+    <div class="page__form">
+        <h2 class="heading heading_level_2">Let's do this!</h2>
+        <form action="" id="form" class="form" novalidate>
+            <div class="form__row">
+                <div class="form__col">
+                    <label for="first-name" class="form-label">first name</label>
+                    <input type="text" id="first-name" name="first-name" class="form-control" required>
                 </div>
-                <div>
-                    <label for="last-name">last name</label>
-                    <input type="text" id="last-name" name="last-name">
+                <div class="form__col">
+                    <label for="last-name" class="form-label">last name</label>
+                    <input type="text" id="last-name" name="last-name" class="form-control" required>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <label for="email">email</label>
-                    <input type="email" id="email" name="email">
+            <div class="form__row">
+                <div class="form__col">
+                    <label for="email" class="form-label">email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
                 </div>
-                <div>
-                    <label for="phone">phone number</label>
-                    <input type="tel" id="phone" name="phone">
+                <div class="form__col">
+                    <label for="phone" class="form-label">phone number</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <label for="password">password</label>
-                    <input type="password" id="password" name="password">
+            <div class="form__row">
+                <div class="form__col">
+                    <label for="password" class="form-label">password</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                    <span class="error" aria-live="polite">* Passwords do not match</span>
                 </div>
-                <div>
-                    <label for="confirm-password">confirm password</label>
-                    <input type="password" id="confirm-password" name="confirm-password">
+                <div class="form__col">
+                    <label for="confirm-password" class="form-label">confirm password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" class="form-control" required>
                 </div>
             </div>
         </form>
     </div>
 
-    <div>
-        <button type="submit" form="form">Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
+    <div class="page__account">
+        <button type="submit" form="form" class="btn btn_lg btn_primary page__btn">Create Account</button>
+        <p class="text text_fs_md">Already have an account? <a href="" class="link link_color_primary link_text-decoration_none">Log in</a></p>
     </div>
 </body>
 
