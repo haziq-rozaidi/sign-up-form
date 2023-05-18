@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: "Norse Bold";
-    src: url(/font/Norse-Bold.ttf);
+    src: url(../font/Norse-Bold.ttf);
 }
 
 
@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(/img/halie-west.jpg);
+    background-image: url(../img/halie-west.jpg);
     background-size: cover;
 }
 
